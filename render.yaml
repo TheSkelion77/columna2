@@ -3,8 +3,4 @@ services:
     name: columna-luminis
     env: python
     buildCommand: ""
-    startCommand: python app.py
-    plan: free
-    branch: main
-    region: frankfurt
-    runtime: python
+    startCommand: gunicorn app:app
